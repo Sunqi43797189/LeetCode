@@ -69,7 +69,7 @@ func BinaryTreeMaxCountLevel(root *helper.BinaryTreeNode) (count int) {
 }
 
 func main() {
-	root := helper.FullBinaryTree()
+	root := helper.CommonBinaryTree()
 	fmt.Println(BinaryTreeMaxCountLevelWithMap(root))
 	fmt.Println(BinaryTreeMaxCountLevel(root))
 }
