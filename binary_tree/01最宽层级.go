@@ -15,7 +15,7 @@ func BinaryTreeMaxCountLevelWithMap(node *helper.BinaryTreeNode) (level int, cou
 		node: 1,
 	}
 	curLevel, curLevelNodes, maxCount := 1, 0, -1
-	for ; len(queue) != 0; {
+	for len(queue) != 0 {
 		node := queue[0]
 		queue = queue[1:]
 		if curLevel == nodeMap[node] {
@@ -45,7 +45,7 @@ func BinaryTreeMaxCountLevel(root *helper.BinaryTreeNode) (count int) {
 	queue := []*helper.BinaryTreeNode{root}
 	var curEnd, nextEnd *helper.BinaryTreeNode
 	curEnd, nextEnd, curLevelNodes, maxCount := root, nil, 0, -1
-	for ; len(queue) != 0; {
+	for len(queue) != 0 {
 		node := queue[0]
 		queue = queue[1:]
 		if node.Left != nil {
