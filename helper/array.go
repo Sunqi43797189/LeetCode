@@ -3,6 +3,8 @@ package helper
 import (
 	"math/rand"
 	"sort"
+	"strconv"
+	"strings"
 	"time"
 )
 
@@ -31,4 +33,38 @@ func ArraySortCompare(dst []int, src []int) bool {
 		}
 	}
 	return true
+}
+
+func SumArray(arr []int) int {
+	sum := 0
+	for _, value := range arr {
+		sum += value
+	}
+	return sum
+}
+
+func IsIntArrayContain(arr []int, target int) bool {
+	for _, value := range arr{
+		if value == target {
+			return true
+		}
+	}
+	return false
+}
+
+func IntArrayJoinString(arr []int, seq string) string  {
+	var temp []string
+	for _, value := range arr {
+		temp = append(temp, strconv.Itoa(value))
+	}
+	return strings.Join(temp, seq)
+}
+
+func IsStringsArrayContain(array []string, item string) bool {
+	for _, str := range array {
+		if str == item {
+			return true
+		}
+	}
+	return false
 }
