@@ -1,4 +1,4 @@
-package main
+package leetcode
 
 import "fmt"
 
@@ -9,7 +9,7 @@ func numberOfMatches(n int) int {
 	return SumArray(res)
 }
 
-func dfs(n int, res *[]int, ) {
+func dfs(n int, res *[]int) {
 	if n == 1 {
 		return
 	}
@@ -33,12 +33,3 @@ func SumArray(arr []int) int {
 	}
 	return sum
 }
-
-func main() {
-	n := 14
-	res := []int{}
-	dfs(n, &res)
-	fmt.Println(SumArray(res))
-}
-
-

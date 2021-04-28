@@ -1,4 +1,4 @@
-package main
+package leetcode
 
 import (
 	"fmt"
@@ -23,15 +23,15 @@ func dfsCombinationSum2(arr []int, res *[][]int, target int, tempArr []int, cach
 			//sort.Ints(a)
 			//str := helper.IntArrayJoinString(a, "")
 			//if !helper.IsStringsArrayContain(*cacheArr, str) {
-				*res = append(*res, a)
-				//*cacheArr = append(*cacheArr, str)
+			*res = append(*res, a)
+			//*cacheArr = append(*cacheArr, str)
 			//}
 		}
 		return
 	}
 
 	for index, value := range arr {
-		if index > 0  && arr[index] == arr[index -1]{
+		if index > 0 && arr[index] == arr[index-1] {
 			continue
 		}
 		if !boolArr[index] {

@@ -1,4 +1,4 @@
-package main
+package leetcode
 
 import (
 	"fmt"
@@ -35,8 +35,4 @@ func DfsCountTarget(arr []int, target int, res *[][]int, tempArr []int, cacheArr
 		DfsCountTarget(arr, target-value, res, tempArr, cacheArray)
 		tempArr = tempArr[:len(tempArr)-1]
 	}
-}
-
-func main() {
-	fmt.Println(combinationSum([]int{2, 3, 5, 6,1}, 7))
 }
