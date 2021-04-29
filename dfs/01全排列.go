@@ -37,10 +37,10 @@ func DfsV2(arr []string, res []string) {
 	}
 }
 
-func main() {
-	arr := []string{"A", "B", "C"}
-	//enable := []bool{true, true, true}
-	res := []string{}
-	//Dfs(arr, enable, res)
-	DfsV2(arr, res)
-}
+// func main() {
+// 	arr := []string{"A", "B", "C"}
+// 	//enable := []bool{true, true, true}
+// 	res := []string{}
+// 	//Dfs(arr, enable, res)
+// 	DfsV2(arr, res)
+// }

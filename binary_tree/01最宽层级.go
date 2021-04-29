@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"leet_code_go/helper"
 	"math"
 )
@@ -68,8 +67,8 @@ func BinaryTreeMaxCountLevel(root *helper.BinaryTreeNode) (count int) {
 	return maxCount
 }
 
-func main() {
-	root := helper.CommonBinaryTree()
-	fmt.Println(BinaryTreeMaxCountLevelWithMap(root))
-	fmt.Println(BinaryTreeMaxCountLevel(root))
-}
+// func main() {
+// 	root := helper.CommonBinaryTree()
+// 	fmt.Println(BinaryTreeMaxCountLevelWithMap(root))
+// 	fmt.Println(BinaryTreeMaxCountLevel(root))
+// }

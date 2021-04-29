@@ -93,7 +93,7 @@ func PosOrderUnRecur(node *helper.BinaryTreeNode) {
 	}
 }
 
-func main() {
-	root := helper.FullBinaryTree()
-	fmt.Println(root.Value)
-}
+// func main() {
+// 	root := helper.FullBinaryTree()
+// 	fmt.Println(root.Value)
+// }

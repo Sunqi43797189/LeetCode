@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"strings"
 )
 
@@ -18,7 +17,7 @@ var data = map[string][]string{
 	"9": {"w", "x", "y", "z"},
 }
 
-var res = []string{}
+// var res = []string{}
 
 func DfsPhoneNum(str string, index int, res *[]string, tempArr []string) {
 	array := strings.Split(str, "")
@@ -34,9 +33,9 @@ func DfsPhoneNum(str string, index int, res *[]string, tempArr []string) {
 
 }
 
-func main() {
-	str := "239"
-	temp := []string{}
-	DfsPhoneNum(str, 0, &res, temp)
-	fmt.Println(res)
-}
+// func main() {
+// 	str := "239"
+// 	temp := []string{}
+// 	DfsPhoneNum(str, 0, &res, temp)
+// 	fmt.Println(res)
+// }

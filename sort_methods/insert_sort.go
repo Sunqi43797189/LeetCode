@@ -1,10 +1,5 @@
 package main
 
-import (
-	"fmt"
-	"leet_code_go/helper"
-)
-
 func InsertSortAsc(array []int) []int {
 	for i := 1; i < len(array); i++ {
 		for j := i - 1; j >= 0; j-- {
@@ -27,9 +22,9 @@ func InsertSortDesc(array []int) []int {
 	return array
 }
 
-func main() {
-	array := helper.RandomIntArray(10, 1000)
-	fmt.Println(array)
-	result := InsertSortAsc(array)
-	fmt.Println(result)
-}
+// func main() {
+// 	array := helper.RandomIntArray(10, 1000)
+// 	fmt.Println(array)
+// 	result := InsertSortAsc(array)
+// 	fmt.Println(result)
+// }

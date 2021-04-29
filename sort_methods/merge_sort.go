@@ -1,10 +1,5 @@
 package main
 
-import (
-	"fmt"
-	"leet_code_go/helper"
-)
-
 func MergeSort(array []int, left, right int) []int {
 	if right == left {
 		return array
@@ -51,27 +46,27 @@ func merge(arr []int, left, right, bound int) {
 	}
 }
 
-func main() {
-	array := helper.RandomIntArray(10, 1000)
-	fmt.Println(array)
-	result := MergeSort(array, 0, len(array)-1)
-	fmt.Println(result)
+// func main() {
+// 	array := helper.RandomIntArray(10, 1000)
+// 	fmt.Println(array)
+// 	result := MergeSort(array, 0, len(array)-1)
+// 	fmt.Println(result)
 
-	a := 1
-	b := 2
-	c := 3
+// 	a := 1
+// 	b := 2
+// 	c := 3
 
-	if a > b{
-		if a > c{
-			fmt.Println(a)
-		}else {
-			fmt.Println(c)
-		}
-	} else {
-		if b < c {
-			fmt.Println(c)
-		} else{
-			fmt.Println(b)
-		}
-	}
-}
+// 	if a > b{
+// 		if a > c{
+// 			fmt.Println(a)
+// 		}else {
+// 			fmt.Println(c)
+// 		}
+// 	} else {
+// 		if b < c {
+// 			fmt.Println(c)
+// 		} else{
+// 			fmt.Println(b)
+// 		}
+// 	}
+// }

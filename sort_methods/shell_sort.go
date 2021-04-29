@@ -1,10 +1,5 @@
 package main
 
-import (
-	"fmt"
-	"leet_code_go/helper"
-)
-
 func ShellSortAsc(array []int) []int {
 	for gap := getArrayGap(array); gap > 0; gap = (gap - 1) / 3 {
 		for i := gap; i < len(array); i++ {
@@ -40,13 +35,13 @@ func getArrayGap(array []int) int {
 	return gap
 }
 
-func main() {
-	array := helper.RandomIntArray(10, 1000)
-	fmt.Println(array)
-	result := ShellSortAsc(array)
-	fmt.Println(result)
-	for index, _ := range array {
+// func main() {
+// 	array := helper.RandomIntArray(10, 1000)
+// 	fmt.Println(array)
+// 	result := ShellSortAsc(array)
+// 	fmt.Println(result)
+// 	for index, _ := range array {
 
-	}
+// 	}
 
-}
+// }
