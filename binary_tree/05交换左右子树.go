@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"leet_code_go/helper"
 )
 
@@ -20,9 +19,9 @@ func ExchangeChildNode(node *helper.BinaryTreeNode) *helper.BinaryTreeNode {
 	return node
 }
 
-func main() {
-	root := helper.CommonBinaryTree()
-	fmt.Println(root.Left, root.Right)
-	ExchangeChildNode(root)
-	fmt.Println(root.Left, root.Right)
-}
+// func main() {
+// 	root := helper.CommonBinaryTree()
+// 	fmt.Println(root.Left, root.Right)
+// 	ExchangeChildNode(root)
+// 	fmt.Println(root.Left, root.Right)
+// }

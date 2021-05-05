@@ -29,10 +29,22 @@ type ListNode struct {
 }
 
 func reverseList(head *ListNode) *ListNode {
-	if head == nil {
-		return nil
+	return recursion(head)
+	// return iterate(head)
+}
+
+func recursion(head *ListNode) *ListNode {
+	if head == nil || head.Next == nil {
+		return head
 	}
-	if head.Next == nil {
+	newHead := recursion(head.Next)
+	head.Next.Next = head
+	head.Next = nil
+	return newHead
+}
+
+func iterate(head *ListNode) *ListNode {
+	if head == nil || head.Next == nil {
 		return head
 	}
 	var prev *ListNode

@@ -1,7 +1,6 @@
 package leetcode
 
 import (
-	"fmt"
 	"leet_code_go/helper"
 	"sort"
 )
@@ -16,7 +15,6 @@ func combinationSum(candidates []int, target int) [][]int {
 
 func DfsCountTarget(arr []int, target int, res *[][]int, tempArr []int, cacheArray *[]string) {
 	if target <= 0 {
-		fmt.Println("tempArr -> ", tempArr, target)
 		if target == 0 {
 			a := make([]int, len(tempArr))
 			copy(a, tempArr)

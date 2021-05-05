@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"leet_code_go/helper"
 )
 
@@ -33,8 +32,8 @@ func CheckCBT(root *helper.BinaryTreeNode) bool {
 	return true
 }
 
-func main() {
-	root := helper.CompleteBinaryTree()
-	result := CheckCBT(root)
-	fmt.Println(result)
-}
+// func main() {
+// 	root := helper.CompleteBinaryTree()
+// 	result := CheckCBT(root)
+// 	fmt.Println(result)
+// }

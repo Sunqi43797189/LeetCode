@@ -1,10 +1,5 @@
 package main
 
-import (
-	"fmt"
-	"leet_code_go/helper"
-	"sort"
-)
 
 func RadixSort(array []int) []int {
 	var max int
@@ -35,19 +30,19 @@ func RadixSort(array []int) []int {
 	return array
 }
 
-func main() {
-	array := helper.RandomIntArray(10000, 100000)
-	newArray := make([]int, len(array))
-	for index, value := range array {
-		newArray[index] = value
-	}
-	result := RadixSort(newArray)
-	//fmt.Println(result)
-	sort.Ints(array)
-	for index, value := range array {
-		if value != result[index] {
-			fmt.Println(index)
-			panic("结果不一样")
-		}
-	}
-}
+// func main() {
+// 	array := helper.RandomIntArray(10000, 100000)
+// 	newArray := make([]int, len(array))
+// 	for index, value := range array {
+// 		newArray[index] = value
+// 	}
+// 	result := RadixSort(newArray)
+// 	//fmt.Println(result)
+// 	sort.Ints(array)
+// 	for index, value := range array {
+// 		if value != result[index] {
+// 			fmt.Println(index)
+// 			panic("结果不一样")
+// 		}
+// 	}
+// }

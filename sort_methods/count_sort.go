@@ -1,11 +1,5 @@
 package main
 
-import (
-	"fmt"
-	"leet_code_go/helper"
-	"sort"
-)
-
 func CountSort(array []int) []int {
 	var max int
 	for i := 0; i < len(array); i++ {
@@ -26,18 +20,18 @@ func CountSort(array []int) []int {
 	return array
 }
 
-func main() {
-	array := helper.RandomIntArray(100000, 1000)
-	newArray := make([]int, len(array))
-	for index, value := range array {
-		newArray[index] = value
-	}
-	result := CountSort(newArray)
-	sort.Ints(array)
-	for index, value := range array {
-		if value != result[index] {
-			fmt.Println(index)
-			panic("结果不一样")
-		}
-	}
-}
+// func main() {
+// 	array := helper.RandomIntArray(100000, 1000)
+// 	newArray := make([]int, len(array))
+// 	for index, value := range array {
+// 		newArray[index] = value
+// 	}
+// 	result := CountSort(newArray)
+// 	sort.Ints(array)
+// 	for index, value := range array {
+// 		if value != result[index] {
+// 			fmt.Println(index)
+// 			panic("结果不一样")
+// 		}
+// 	}
+// }

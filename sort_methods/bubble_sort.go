@@ -3,7 +3,6 @@ package main
 
 import (
 	"fmt"
-	"leet_code_go/helper"
 )
 
 //func BubbleSortAsc(array []int) []int {
@@ -46,15 +45,15 @@ func BubbleSortDesc(array []int) []int {
 	return array
 }
 
-func main() {
-	var array []int
-	array = helper.RandomIntArray(10, 1000)
-	fmt.Println(array)
-	ascResult := BubbleSortAsc([]int{1, 2, 3, 4, 5}) // 最好情况下是O(n)的，可以遍历发现是有序的，可以取消掉后边无效的遍历
-	fmt.Println(ascResult)
+// func main() {
+// 	var array []int
+// 	array = helper.RandomIntArray(10, 1000)
+// 	fmt.Println(array)
+// 	ascResult := BubbleSortAsc([]int{1, 2, 3, 4, 5}) // 最好情况下是O(n)的，可以遍历发现是有序的，可以取消掉后边无效的遍历
+// 	fmt.Println(ascResult)
 
-	array = helper.RandomIntArray(10, 100)
-	fmt.Println(array)
-	descResult := BubbleSortDesc(array)
-	fmt.Println(descResult)
-}
+// 	array = helper.RandomIntArray(10, 100)
+// 	fmt.Println(array)
+// 	descResult := BubbleSortDesc(array)
+// 	fmt.Println(descResult)
+// }

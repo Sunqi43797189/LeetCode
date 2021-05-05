@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"sort"
 )
 
@@ -18,18 +17,18 @@ func DfsCountTarget(arr []int, target int, res *[][]int, tempArr []int) {
 
 	for _, value := range arr {
 		tempArr = append(tempArr, value)
-		DfsCountTarget(arr, target - value, res, tempArr)
+		DfsCountTarget(arr, target-value, res, tempArr)
 		tempArr = tempArr[:len(tempArr)-1]
 	}
 }
 
-func main() {
-	arr := []int{2, 3, 6, 7}
-	target := 7
-	var res [][]int
-	DfsCountTarget(arr, target, &res, []int{})
-	fmt.Println(res)
-}
+// func main() {
+// 	arr := []int{2, 3, 6, 7}
+// 	target := 7
+// 	var res [][]int
+// 	DfsCountTarget(arr, target, &res, []int{})
+// 	fmt.Println(res)
+// }
 
 func SumArray(arr []int) int {
 	sum := 0

@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"leet_code_go/helper"
 	"math"
 )
@@ -19,8 +18,8 @@ func BlanceBinaryTree(node *helper.BinaryTreeNode) (bool, int) {
 	}
 }
 
-func main() {
-	root := helper.CompleteBinaryTree()
-	isBlanced, _ := BlanceBinaryTree(root)
-	fmt.Println(isBlanced)
-}
+// func main() {
+// 	root := helper.CompleteBinaryTree()
+// 	isBlanced, _ := BlanceBinaryTree(root)
+// 	fmt.Println(isBlanced)
+// }

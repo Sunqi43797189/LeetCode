@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 func DfsAllNum(arr []int, res *[][]int, level int, boolArr []bool, tempArr []int) {
 	if level >= len(arr)+1 {
 		a := make([]int, len(tempArr))
@@ -21,13 +19,13 @@ func DfsAllNum(arr []int, res *[][]int, level int, boolArr []bool, tempArr []int
 
 }
 
-func main() {
-	arr := []int{1, 2, 3}
-	var res [][]int
-	boolArr := make([]bool, len(arr))
-	for i := 0; i < len(arr); i ++ {
-		boolArr[i] = true
-	}
-	DfsAllNum(arr, &res, 1, boolArr, []int{})
-	fmt.Println(res)
-}
+// func main() {
+// 	arr := []int{1, 2, 3}
+// 	var res [][]int
+// 	boolArr := make([]bool, len(arr))
+// 	for i := 0; i < len(arr); i ++ {
+// 		boolArr[i] = true
+// 	}
+// 	DfsAllNum(arr, &res, 1, boolArr, []int{})
+// 	fmt.Println(res)
+// }

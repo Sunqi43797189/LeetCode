@@ -29,8 +29,8 @@ func DfsIP(str string, index int, level int, res []string) {
 	}
 }
 
-func main() {
-	str := "19216801"
-	res := []string{}
-	DfsIP(str, -1, 1, res)
-}
+// func main() {
+// 	str := "19216801"
+// 	res := []string{}
+// 	DfsIP(str, -1, 1, res)
+// }

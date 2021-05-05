@@ -1,10 +1,6 @@
 // 选择排序 时间复杂度O(N^2)
 package main
 
-import (
-	"fmt"
-)
-
 func ChooseSortAsc(array []int) []int {
 	for i := 0; i <= len(array)-1; i++ {
 		minPos := i
@@ -31,9 +27,9 @@ func ChooseSortDesc(array []int) []int {
 	return array
 }
 
-func main() {
-	ascResult := ChooseSortAsc([]int{55, 50, 18, 13, 16, 66, 34, 77, 23, 46})
-	descResult := ChooseSortDesc([]int{55, 50, 18, 13, 16, 66, 34, 77, 23, 46})
-	fmt.Println(ascResult)
-	fmt.Println(descResult)
-}
+// func main() {
+// 	ascResult := ChooseSortAsc([]int{55, 50, 18, 13, 16, 66, 34, 77, 23, 46})
+// 	descResult := ChooseSortDesc([]int{55, 50, 18, 13, 16, 66, 34, 77, 23, 46})
+// 	fmt.Println(ascResult)
+// 	fmt.Println(descResult)
+// }

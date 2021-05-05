@@ -1,9 +1,9 @@
 package main
 
-import (
-	"fmt"
-	"leet_code_go/helper"
-)
+// import (
+// 	"fmt"
+// 	"leet_code_go/helper"
+// )
 
 func QuickSort(array []int, left, right int) []int {
 	if left >= right {
@@ -33,9 +33,9 @@ func partition(array []int, left, right int) int {
 	array[l], array[right] = array[right], array[l]
 	return l
 }
-func main() {
-	array := helper.RandomIntArray(10000, 100000)
-	cArray := helper.CopyArray(array)
-	result := QuickSort(cArray, 0, len(cArray)-1)
-	fmt.Println(helper.ArraySortCompare(result, array))
-}
+// func main() {
+// 	array := helper.RandomIntArray(10000, 100000)
+// 	cArray := helper.CopyArray(array)
+// 	result := QuickSort(cArray, 0, len(cArray)-1)
+// 	fmt.Println(helper.ArraySortCompare(result, array))
+// }
